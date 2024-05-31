@@ -8,7 +8,7 @@ This is the repository for the paper *[DC4L: Distribution Shift Recovery via Dat
 ### Package Installations
 Our code requires python 3.9.12 and MATLAB R2022b with the Deep Learning Toolbox.
 
-1. Follow [instructions](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html) to install MATLAB Enging API for Python
+1. Follow [instructions](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html) to install MATLAB Engine API for Python.
 2. Install [RobustBench](https://robustbench.github.io/).
     ```
     pip install git+https://github.com/RobustBench/robustbench.git@v1.1
@@ -41,7 +41,7 @@ We evaluate downstream classifiers using pre-trained weights provided by the ori
 Download [pre-trained ImageNet and CIFAR-100 weights](https://drive.google.com/file/d/1CXvBl8K_8889ok3EQ71u_mj3VbhVqcEE/view?usp=sharing) and unpack them to `src/checkpoints`.
 
 ## Reproducing our Results
-1. Train agent to correct ImageNet corruptions. Pre-trained actor and critic networks are located under `published_results/networks`. To train new networks, run
+1. Train agent to correct ImageNet corruptions. Pre-trained actor and critic networks are located under `published_results/networks`. To train new networks, run:
     ```
     python train_agent.py
     ```
