@@ -1,0 +1,5 @@
+*__pycache__*
+
+/src/datasets/*
+/src/checkpoints/*
+/src/models/cifar100/*
